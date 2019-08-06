@@ -1,0 +1,22 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "site"
+  ],
+  "properties": {
+    "location": {
+      "$id": "#/properties/site",
+      "type": "string",
+      "title": "The Site Schema",
+      "default": "",
+      "examples": [
+        "Niagra Falls"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}

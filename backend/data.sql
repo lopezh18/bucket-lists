@@ -1,0 +1,38 @@
+\c bucket-list
+
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS locations;
+DROP TABLE IF EXISTS activities;
+DROP TABLE IF EXISTS sites;
+
+CREATE TABLE users(
+  username TEXT PRIMARY KEY,
+  password TEXT NOT NULL,
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL, 
+  email TEXT NOT NULL UNIQUE, 
+  home_airport TEXT NOT NULL
+);
+
+CREATE TABLE locations(
+  id SERIAL PRIMARY KEY, 
+  location_name TEXT NOT NULL, 
+  username TEXT NOT NULL REFERENCES users ON DELETE CASCADE, 
+  status BOOLEAN DEFAULT FALSE NOT NULL
+);
+
+CREATE TABLE activities(
+  id SERIAL PRIMARY KEY, 
+  activity_name TEXT NOT NULL, 
+  username TEXT NOT NULL REFERENCES users ON DELETE CASCADE,
+  location_id INTEGER REFERENCES locations ON DELETE CASCADE,
+  status BOOLEAN DEFAULT FALSE NOT NULL
+);
+
+CREATE TABLE sites(
+  id SERIAL PRIMARY KEY, 
+  site_name TEXT NOT NULL, 
+  username TEXT NOT NULL REFERENCES users ON DELETE CASCADE, 
+  location_id INTEGER REFERENCES locations ON DELETE CASCADE,
+  status BOOLEAN DEFAULT FALSE NOT NULL
+)

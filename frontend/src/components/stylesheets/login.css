@@ -1,0 +1,52 @@
+.login-card{
+  width: 500px;
+  margin: auto;
+  justify-content: center;
+  background-color: rgb(211, 211, 211);
+  opacity: 0.7;
+  color: black;
+  border-radius: 25px;
+}
+
+.login{
+  text-align: center;
+}
+
+.login-image{
+  background-image: url('../../images/plane2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-container{
+ display: flex;
+ height: 95vh;
+}
+
+
+.login-inputs{
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.login-error{
+  background-color: rgb(232, 118, 110);
+  border: none;
+  color: black;
+}
+
+/* .text-dark input:-ms-input-placeholder {
+  color: black;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+} */
+
+/* input-placeholder .login-inputs{
+  color: black !important; 
+} */

@@ -1,0 +1,19 @@
+.navbar-dark{
+  background-color: black;
+}
+
+.navbar-dark .navbar-brand, #login, #signup, #logout, #activities, #locations{
+  color: whitesmoke;
+}
+
+#login:hover, #signup:hover, #locations:hover, #activities:hover, #logout:hover{
+  color:rgb(143, 143, 143);
+}
+
+#login.active, #signup.active, #locations.active, #activities.active, #logout.active{
+  color:rgb(143, 143, 143);
+}
+
+.fa-bars{
+  color: whitesmoke;
+}

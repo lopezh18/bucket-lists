@@ -1,0 +1,30 @@
+.autocomplete{
+  border: 1px solid grey;
+  /* background-color: white; */
+  /* color: black; */
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18)
+}
+
+.autocomplete-input{
+  width: 100%;
+  border: none;
+}
+
+.autocomplete ul{
+  list-style: none;
+  text-align: left;
+}
+
+.autocomplete li{
+  cursor: pointer;
+}
+
+.countriesList{
+  max-height: 95px;
+  overflow-y: auto;
+  margin-bottom: 5px;
+}
+
+.autocomplete li:hover{
+  text-decoration: underline;
+}

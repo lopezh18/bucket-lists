@@ -1,0 +1,15 @@
+.location-items{
+  list-style: none;
+}
+
+hr {
+  height: 1px;
+  background-color: rgb(130, 128, 128);
+  width: 50%;
+  margin: 0 25%
+}
+
+.sub-card{
+  border: solid black;
+  width:300px;
+}

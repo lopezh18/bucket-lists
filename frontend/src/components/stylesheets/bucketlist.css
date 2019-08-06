@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.showcase{
+  height: 500px;
+}
+
+.activity-img{
+  background-image: url(../../images/hot-air-balloons.jpg);
+  color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin: 0 10px 10px;
+}
+
+.location-img{
+  background-image: url(../../images/Transamerica.jpg);
+  color: whitesmoke;
+  background-position: top;
+  background-size: cover;
+  height: 100%;
+  margin: 0 10px 10px;
+}
+
+.site-img{
+  background-image: url(../../images/eiffel-tower.jpg);
+  color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  margin: 0 10px 10px;
+}
+
+.item-card{
+  color: whitesmoke;
+  border: none;
+  max-width: 40%;
+  opacity: 1;
+  background-color: transparent;
+  border: solid 1px black;
+  /* max-width: 40%; */
+}
+
+.row-container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-row{
+  padding: 0;
+  justify-content: center;
+}
+
+.item-card:hover { 
+  width: 30%;
+}
+
+.jumbotron-cover-image{
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+  display: block;
+}
+
+.brand{
+  font-size: 80px;
+}
+
+.header-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.BucketList{
+  text-align: center;
+}
+
+.container{
+  display: inline-block;
+}
+
+.itemForm-input{
+  /* width: 100% */
+  margin: 150px auto 0 auto;
+  /* width: 600px; */
+  width: 173px;
+}
